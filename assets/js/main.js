@@ -1,5 +1,7 @@
 $(window).on('load', function() {
     $('header').height($(window).height());
+    console.log( $(window).height()-540);
+    $('.intro-text').css('top', $(window).height()-540);
 });
 $(document).ready(function(){
     var offset_stuck = 100;
