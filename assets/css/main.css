@@ -115,34 +115,37 @@ h1 {
 .small-icon.black-arrow {
   width: 17px;
   height: 29px;
+  background-position: -5px -44px;
+}
+.small-icon.close-icon {
+  width: 28px;
+  height: 29px;
   background-position: -43px -5px;
 }
 .small-icon.drive2 {
   width: 16px;
   height: 16px;
-  background-position: -5px -44px;
+  background-position: -32px -44px;
 }
 .small-icon.instagram {
   width: 16px;
   height: 16px;
-  background-position: -31px -44px;
+  background-position: -58px -44px;
 }
 .small-icon.vk {
   width: 23px;
   height: 13px;
-  background-position: -70px -5px;
+  background-position: -81px -5px;
 }
-.small-icon.youtube {
+.small-icon.youtube-small {
   width: 18px;
   height: 12px;
-  background-position: -70px -28px;
+  background-position: -84px -28px;
 }
-.youtube-big {
-  background-image: url('../images/youtube-24.png');
-  background-repeat: no-repeat;
-  display: block;
+.small-icon.youtube-big {
   width: 24px;
   height: 24px;
+  background-position: -84px -50px;
 }
 .circle-icon {
   background-image: url('../images/sprite-2.png');
@@ -354,6 +357,7 @@ a .link-arrow {
 #video {
   background-image: url(../images/bg.jpg);
   color: #fff;
+  position: relative;
   /* 16x9 Aspect Ratio 
     .intrinsic-container-16x9 {
       padding-bottom: 56.25%;
@@ -436,8 +440,9 @@ a .link-arrow {
   color: #fff;
 }
 #contacts .text-col {
-  height: auto;
   padding: 20px 40px;
+  min-height: 480px;
+  height: auto;
 }
 #contacts .address {
   padding: 27px 0;
@@ -479,17 +484,17 @@ a .link-arrow {
   right: 40px;
   bottom: 0;
 }
-#contacts a {
+#contacts .showMap {
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
   font-size: 18px;
   color: #282828;
   display: block;
   margin-top: 22px;
 }
-#contacts a span {
+#contacts .showMap span {
   text-decoration: underline;
 }
-#contacts a:hover {
+#contacts .showMap:hover {
   text-decoration: none;
 }
 #contacts .links {
@@ -497,9 +502,18 @@ a .link-arrow {
   /*margin-top: 85px;*/
 }
 #contacts .links a {
+  font-family: 'PFDinTextCompPro-Regular', sans-serif;
+  font-size: 18px;
+  color: #282828;
   position: relative;
   display: inline-block;
   margin-right: 20px;
+}
+#contacts .links a span {
+  text-decoration: underline;
+}
+#contacts .links a:hover {
+  text-decoration: none;
 }
 #contacts .links a span {
   display: inline-block;
@@ -566,4 +580,19 @@ a .link-arrow {
 #contacts input:focus ~ .bar:before,
 #contacts input:focus ~ .bar:after {
   width: 100%;
+}
+#contacts .map {
+  position: absolute;
+  display: none;
+  padding: 0;
+  right: 0;
+}
+#contacts .map img {
+  width: 100%;
+}
+#contacts .map .close-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
