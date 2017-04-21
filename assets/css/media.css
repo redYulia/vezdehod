@@ -12,6 +12,14 @@
   #portfolio .text-col {
     padding: 0 20px 20px;
   }
+  #portfolio .text-col .arrow {
+    top: 28px;
+    right: 20px;
+  }
+  #contacts .rights {
+    bottom: 5px;
+    top: auto;
+  }
 }
 @media (max-width: 870px) {
   .navbar-nav > li > a {
@@ -24,7 +32,7 @@
     right: 10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-nav.navbar-center {
     position: relative;
     left: 0;
@@ -54,9 +62,6 @@
   }
   #contacts .text-col {
     padding: 20px;
-  }
-  #contacts .rights {
-    margin-right: 0;
   }
   #contacts .links {
     margin-top: 20px;

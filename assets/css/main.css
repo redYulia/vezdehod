@@ -112,7 +112,7 @@ h1 {
   height: 17px;
   background-position: -5px -5px;
 }
-.small-icon .sprite-dark-arrow {
+.small-icon.black-arrow {
   width: 17px;
   height: 29px;
   background-position: -43px -5px;
@@ -231,12 +231,16 @@ header .white-arrow {
   color: #fff;
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
   font-size: 18px;
+  text-decoration: underline;
 }
 #company a span {
   text-decoration: underline;
 }
 #company a:hover {
   text-decoration: none;
+}
+#company a:hover {
+  text-decoration: underline;
 }
 #company .circle-icon {
   margin: 0 auto;
@@ -270,6 +274,11 @@ header .white-arrow {
 }
 #portfolio .text-col {
   padding: 20px 75px;
+}
+#portfolio .text-col .arrow {
+  position: absolute;
+  right: 40px;
+  top: 43px;
 }
 #portfolio .links {
   margin-top: 40px;
@@ -427,6 +436,7 @@ a .link-arrow {
   color: #fff;
 }
 #contacts .text-col {
+  height: auto;
   padding: 20px 40px;
 }
 #contacts .address {
@@ -464,9 +474,10 @@ a .link-arrow {
 #contacts .rights {
   font-size: 11px;
   opacity: .6;
-  float: right;
-  margin-top: 25px;
-  margin-right: 40px;
+  position: absolute;
+  top: 122px;
+  right: 40px;
+  bottom: 0;
 }
 #contacts a {
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
@@ -483,7 +494,7 @@ a .link-arrow {
 }
 #contacts .links {
   padding: 0;
-  margin-top: 85px;
+  /*margin-top: 85px;*/
 }
 #contacts .links a {
   position: relative;
@@ -492,8 +503,6 @@ a .link-arrow {
 }
 #contacts .links a span {
   display: inline-block;
-}
-#contacts .links a .social-text {
   padding-left: 24px;
 }
 #contacts .links a .small-icon {
