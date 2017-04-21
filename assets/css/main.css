@@ -80,7 +80,7 @@ h1 {
   transform: translatex(-50%);
   min-width: 614px;
 }
-.navbar-nav > li > a {
+.navbar-center > li > a {
   font-family: 'PFDinTextCompPro-Medium', sans-serif;
   text-transform: uppercase;
   color: #fff;
@@ -117,22 +117,22 @@ h1 {
   height: 29px;
   background-position: -43px -5px;
 }
-.small-icon .sprite-drive2 {
+.small-icon.drive2 {
   width: 16px;
   height: 16px;
   background-position: -5px -44px;
 }
-.small-icon .sprite-inst {
+.small-icon.instagram {
   width: 16px;
   height: 16px;
   background-position: -31px -44px;
 }
-.small-icon .sprite-vk {
+.small-icon.vk {
   width: 23px;
   height: 13px;
   background-position: -70px -5px;
 }
-.small-icon .sprite-yout {
+.small-icon.youtube {
   width: 18px;
   height: 12px;
   background-position: -70px -28px;
@@ -266,6 +266,7 @@ header .white-arrow {
 }
 #portfolio .image-col img {
   width: 100%;
+  object-fit: cover;
 }
 #portfolio .text-col {
   padding: 20px 75px;
@@ -357,6 +358,7 @@ a .link-arrow {
 #video .iframe-container {
   max-width: 715px;
   max-height: 400px;
+  width: 70%;
   position: relative;
   height: 0;
   overflow: hidden;
@@ -459,6 +461,13 @@ a .link-arrow {
   line-height: 24px;
   margin: 0;
 }
+#contacts .rights {
+  font-size: 11px;
+  opacity: .6;
+  float: right;
+  margin-top: 25px;
+  margin-right: 40px;
+}
 #contacts a {
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
   font-size: 18px;
@@ -471,6 +480,25 @@ a .link-arrow {
 }
 #contacts a:hover {
   text-decoration: none;
+}
+#contacts .links {
+  padding: 0;
+  margin-top: 85px;
+}
+#contacts .links a {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+#contacts .links a span {
+  display: inline-block;
+}
+#contacts .links a .social-text {
+  padding-left: 24px;
+}
+#contacts .links a .small-icon {
+  position: absolute;
+  bottom: 6px;
 }
 #contacts form {
   margin-top: 23px;
