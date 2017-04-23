@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="assets/css/media.css">
 </head>
 <body>
-    <nav id="mainNav" class="navbar navbar-custom navbar-static-top">
+    <div id="home-page">
+    <nav id="mainNav" class="navbar navbar-custom navbar-static-top navbar-home">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -21,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="sr-only">Toggle navigation</span>
                 </button>
-                <!-- <a class="navbar-brand page-scroll" href="#page-top">Some img</a> -->
+                <a class="navbar-brand page-scroll visible-xs" href="#page-top"><img class="img-responsive" src="assets/images/logo-min.png" alt=""></a>
             </div>
             <div class="collapse navbar-collapse clearfix" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-center">
@@ -48,11 +49,11 @@
         </div>
     </nav>
     <!-- Header -->
-    <header>
+    <header id="page-top">
         <div class="container text-center">
             <div class="row">
                 <div class="intro-logo">
-                    <img src="assets/images/logo.png" alt="">
+                    <img src="assets/images/logo.png" alt="" class="img-responsive">
                 </div>
             </div>
             <div class="row">
@@ -80,7 +81,7 @@
                     <p>Наша компания осуществляет реставрацию, модернизацию и продажу снегоболотоходов-амфибий разработанных советскими конструкторами с 50% запасом прочности для нужд армии. Это надёжные, проходимые, мощные и легендарные вездеходы которые выпускались в СССР в период с 1961 по настоящее время.</p>
                 </div>
                 <div class="col-xs-12 text-center">
-                    <a href="">Подробнее о компании</a>
+                    <a href="/about.html">Подробнее о компании</a>
                 </div>
             </div>
             <div class="row features">
@@ -280,7 +281,7 @@
             <i class="small-icon close-icon"></i>
         </div>
     </section>
-    
+    </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/smooth-scroll.js"></script>

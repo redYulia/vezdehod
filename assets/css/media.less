@@ -1,14 +1,32 @@
-@media (min-width: 1280px) {
-	/*.container {
-		width: 1260px;
-	}*/
+@media (min-width: 1200px) {
+    #home-page .container {
+        width: 100%;
+    }
+}
+@media (min-width: 1086px) {
+    .container {
+        width: 1086px;
+    }
+    #mainNav.navbar-not-home .container {
+        width: 1086px;
+    }
 }
 @media (max-width: 1200px) {
-    .container {
+    #mainNav.navbar-home .container {
+        width: 100%;
+    }
+}
+@media (max-width: 1086px) {
+    #mainNav.navbar-not-home .container {
         width: 100%;
     }
 }
 @media (max-width: 992px) {
+    
+    #mainNav.navbar-not-home .navbar-nav>li>a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     #portfolio .text-col {
         padding: 0 20px 20px;
         .arrow {
@@ -24,8 +42,17 @@
     }
 }
 @media (max-width: 870px) {
-    .navbar-nav>li>a {
+    #mainNav.navbar-home .navbar-nav>li>a {
         padding: 26px 20px;
+    }
+    #mainNav.navbar-not-home {
+        .navbar-center {
+            margin-right: 0;
+        }
+        .navbar-nav>li>a {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
     }
     #video {
         .left .white-arrow {
@@ -37,7 +64,17 @@
     }
 }
 @media (max-width: 767px) {
-    .navbar-nav.navbar-center {
+    #mainNav .navbar-brand {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        img {
+            height: 37px;
+        }
+    }
+    #mainNav.navbar-fixed-top .navbar-brand {
+        padding-left: 15px;
+    }
+    .navbar-center {
         position: relative;
         left: 0;
         transform: none;
@@ -48,6 +85,22 @@
     }
     .navbar-nav > li > a {
         padding: 16px 20px;
+    }
+    header .intro-logo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #company {
+        .features {
+            margin-top: 20px;
+        }
+        .features > div {
+            width: 25%;
+        }
+        .company-heading {
+            margin-top: 10px;
+            font-size: 18px;
+        }
     }
     #video {
         .iframe-container {
@@ -61,6 +114,11 @@
     #portfolio {
         p {
             text-align: justify;
+        }
+        .links a {
+            float: none;
+            width: 100%;
+            display: block;
         }
     }
     #portfolio .image-col img,
@@ -76,11 +134,24 @@
             margin-top: 20px;
         }
     }
+    #about {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        p {
+            text-align: justify;
+        }
+        .row > div.text-col {
+            padding-right: 0;
+        }
+        .links {
+            text-align: center;
+        }
+    }
 }
-@media (max-width: 425px) {
-    #portfolio .links a {
-        float: none;
-        width: 100%;
-        display: block;
+@media (max-width: 530px) {
+    #company {
+        .features > div {
+            width: 50%;
+        }
     }
 }
