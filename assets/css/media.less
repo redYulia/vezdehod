@@ -23,9 +23,14 @@
 }
 @media (max-width: 992px) {
     
-    #mainNav.navbar-not-home .navbar-nav>li>a {
-        padding-left: 10px;
-        padding-right: 10px;
+    #mainNav.navbar-not-home {
+        .navbar-center {
+            margin-right: 40px;
+        }
+        .navbar-nav>li>a {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
     #portfolio .text-col {
         padding: 0 20px 20px;
@@ -64,7 +69,13 @@
     }
 }
 @media (max-width: 767px) {
+    .links a {
+        float: none;
+        width: 100%;
+        display: block;
+    }
     #mainNav {
+        height: 53px;
         .navbar-nav {
             margin: 0 auto;
         }
@@ -89,20 +100,28 @@
                 padding-left: 15px;
             }         
         }
-        .navbar-center {
-            position: relative;
-            left: 0;
-            transform: none;
-            min-width: 100%;
-            &>li {
+        &.navbar-home,
+        &.navbar-not-home {
+            .navbar-center,
+            .navbar-right{
+                float: none;
+                position: relative;
+                left: 0;
+                transform: none;
+                min-width: 100%;
+            }
+            .navbar-right {
+                padding: 0;
+                &>li {
+                    padding: 15px;
+                    height: 51px;
+                }
+            }
+            .navbar-right > li,
+            .navbar-center > li{
                 border-top: 1px solid #fff;
             }
-        }
-        .navbar-right {
-            padding: 0 !important;
-        }
-        .navbar-right > li {
-            padding: 15px !important;
+            
         }
         .navbar-collapse {
             background: #0f0e0e;
@@ -140,10 +159,9 @@
             text-align: justify;
         }
         .links a {
-            float: none;
-            width: 100%;
-            display: block;
+            margin: 0 !important;
         }
+        
     }
     #portfolio .image-col img,
     #contacts .feedback-col {
@@ -178,6 +196,23 @@
         h2 {
             font-size: 24px;
         }
+    }
+    #gallery-page {
+        .page-content {
+            .gallery-row {
+                flex-direction: column;
+            }
+            .back-link {
+                top: 90px;
+            }
+            .gallery-img {
+                margin: 0;
+            }
+            figcaption {
+                margin-bottom: 20px;
+            }
+        }
+        
     }
 }
 @media (max-width: 530px) {
