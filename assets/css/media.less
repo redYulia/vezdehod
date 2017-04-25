@@ -64,28 +64,52 @@
     }
 }
 @media (max-width: 767px) {
-    #mainNav .navbar-brand {
-        padding-top: 8px !important;
-        padding-bottom: 8px !important;
-        img {
-            height: 37px;
+    #mainNav {
+        .navbar-nav {
+            margin: 0 auto;
+        }
+        .navbar-nav>li {
+            text-align: center;
+            &>a {
+                padding: 15px !important;
+                &:before {
+                    display: none;
+                }
+            }
+        }
+        .navbar-brand {
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+            img {
+                height: 37px;
+            }
+        }
+        &.navbar-fixed-top {
+            .navbar-brand {
+                padding-left: 15px;
+            }         
+        }
+        .navbar-center {
+            position: relative;
+            left: 0;
+            transform: none;
+            min-width: 100%;
+            &>li {
+                border-top: 1px solid #fff;
+            }
+        }
+        .navbar-right {
+            padding: 0 !important;
+        }
+        .navbar-right > li {
+            padding: 15px !important;
+        }
+        .navbar-collapse {
+            background: #0f0e0e;
+            padding: 0;
         }
     }
-    #mainNav.navbar-fixed-top .navbar-brand {
-        padding-left: 15px;
-    }
-    .navbar-center {
-        position: relative;
-        left: 0;
-        transform: none;
-        min-width: 100%;
-    }
-    .navbar-collapse {
-        background: #0f0e0e;
-    }
-    .navbar-nav > li > a {
-        padding: 16px 20px;
-    }
+    
     header .intro-logo {
         margin-left: 20px;
         margin-right: 20px;
@@ -134,17 +158,25 @@
             margin-top: 20px;
         }
     }
-    #about {
-        padding-top: 70px;
-        padding-bottom: 70px;
+    .page-content {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
         p {
             text-align: justify;
+            font-size: 14px;
         }
-        .row > div.text-col {
+        .row > div.text-col,
+        .row > div.image-col{
             padding-right: 0;
         }
         .links {
             text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h2 {
+            font-size: 24px;
         }
     }
 }

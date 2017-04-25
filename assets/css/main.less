@@ -319,7 +319,7 @@ header {
     padding: 4px 32px;
 }
 #company, 
-#about {
+.page-content {
     min-height: 574px;
     background-image: url(../images/bg.jpg);
     color: #fff;
@@ -653,7 +653,7 @@ header {
         }
     }
 }
-#about {
+.page-content {
     padding-top: 178px;
     padding-bottom: 205px;
     .row {
@@ -667,16 +667,48 @@ header {
             padding-right: 80px;
         }
         &.image-col {
-            //padding-right: 15px;
+            padding-right: 15px;
             padding-top: 4px;
         }
     }
-    p,
+    p {
+        font-family: 'OpenSans', sans-serif;
+        font-size: 12px;
+    }
     figcaption {
         font-family: @light-font, sans-serif;
     }
     figcaption {
         font-style: italic;
         margin-top: 20px;
+    }
+    h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;    
+        margin-top: 4px;
+        margin-bottom: 30px;
+    }
+    article {
+        border: 0;
+        border-bottom: 1px solid #fff;
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    article:last-child {
+        border: 0;
+    }
+}
+#portfolio-page .page-content {
+    padding-top: 124px;
+    padding-bottom: 24px;
+    h1 {
+        margin-bottom: 0;
+    }
+    .row {
+        margin-top: 54px;
+        margin-bottom: 14px;
+    }
+    p {
+        margin: 0 auto 24px;
     }
 }

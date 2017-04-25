@@ -315,29 +315,29 @@ header .white-arrow {
   padding: 4px 32px;
 }
 #company,
-#about {
+.page-content {
   min-height: 574px;
   background-image: url(../images/bg.jpg);
   color: #fff;
 }
 #company p,
-#about p,
+.page-content p,
 #company figcaption,
-#about figcaption {
+.page-content figcaption {
   margin: 0 auto 20px;
   font-size: 14px;
   line-height: 24px;
 }
 @media (max-width: 767px) {
   #company p,
-  #about p,
+  .page-content p,
   #company figcaption,
-  #about figcaption {
+  .page-content figcaption {
     font-size: 18px;
   }
 }
 #company a,
-#about a {
+.page-content a {
   color: #fff;
   font-family: 'PFDinTextCompPro-Regular', sans-serif;
   font-size: 18px;
@@ -345,20 +345,20 @@ header .white-arrow {
 }
 @media (max-width: 767px) {
   #company a,
-  #about a {
+  .page-content a {
     font-size: 24px;
   }
 }
 #company a span,
-#about a span {
+.page-content a span {
   text-decoration: underline;
 }
 #company a:hover,
-#about a:hover {
+.page-content a:hover {
   text-decoration: none;
 }
 #company a:hover,
-#about a:hover {
+.page-content a:hover {
   text-decoration: underline;
 }
 #company .row {
@@ -723,28 +723,61 @@ header .white-arrow {
   top: 40px;
   right: 40px;
 }
-#about {
+.page-content {
   padding-top: 178px;
   padding-bottom: 205px;
 }
-#about .row {
+.page-content .row {
   margin-top: 20px;
   padding: 0 15px;
 }
-#about .row > div {
+.page-content .row > div {
   padding: 0;
 }
-#about .row > div.text-col {
+.page-content .row > div.text-col {
   padding-right: 80px;
 }
-#about .row > div.image-col {
+.page-content .row > div.image-col {
+  padding-right: 15px;
   padding-top: 4px;
 }
-#about p,
-#about figcaption {
+.page-content p {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 12px;
+}
+.page-content figcaption {
   font-family: 'PFDinTextCompPro-Light', sans-serif;
 }
-#about figcaption {
+.page-content figcaption {
   font-style: italic;
   margin-top: 20px;
+}
+.page-content h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 30px;
+}
+.page-content article {
+  border: 0;
+  border-bottom: 1px solid #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.page-content article:last-child {
+  border: 0;
+}
+#portfolio-page .page-content {
+  padding-top: 124px;
+  padding-bottom: 24px;
+}
+#portfolio-page .page-content h1 {
+  margin-bottom: 0;
+}
+#portfolio-page .page-content .row {
+  margin-top: 54px;
+  margin-bottom: 14px;
+}
+#portfolio-page .page-content p {
+  margin: 0 auto 24px;
 }

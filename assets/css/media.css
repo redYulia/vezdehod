@@ -57,6 +57,18 @@
   }
 }
 @media (max-width: 767px) {
+  #mainNav .navbar-nav {
+    margin: 0 auto;
+  }
+  #mainNav .navbar-nav > li {
+    text-align: center;
+  }
+  #mainNav .navbar-nav > li > a {
+    padding: 15px !important;
+  }
+  #mainNav .navbar-nav > li > a:before {
+    display: none;
+  }
   #mainNav .navbar-brand {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
@@ -67,17 +79,24 @@
   #mainNav.navbar-fixed-top .navbar-brand {
     padding-left: 15px;
   }
-  .navbar-center {
+  #mainNav .navbar-center {
     position: relative;
     left: 0;
     transform: none;
     min-width: 100%;
   }
-  .navbar-collapse {
-    background: #0f0e0e;
+  #mainNav .navbar-center > li {
+    border-top: 1px solid #fff;
   }
-  .navbar-nav > li > a {
-    padding: 16px 20px;
+  #mainNav .navbar-right {
+    padding: 0 !important;
+  }
+  #mainNav .navbar-right > li {
+    padding: 15px !important;
+  }
+  #mainNav .navbar-collapse {
+    background: #0f0e0e;
+    padding: 0;
   }
   header .intro-logo {
     margin-left: 20px;
@@ -119,18 +138,27 @@
   #contacts .links {
     margin-top: 20px;
   }
-  #about {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  .page-content {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
   }
-  #about p {
+  .page-content p {
     text-align: justify;
+    font-size: 14px;
   }
-  #about .row > div.text-col {
+  .page-content .row > div.text-col,
+  .page-content .row > div.image-col {
     padding-right: 0;
   }
-  #about .links {
+  .page-content .links {
     text-align: center;
+  }
+  .page-content h1,
+  .page-content h2 {
+    text-align: center;
+  }
+  .page-content h2 {
+    font-size: 24px;
   }
 }
 @media (max-width: 530px) {
