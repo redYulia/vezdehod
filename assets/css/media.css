@@ -23,7 +23,7 @@
 }
 @media (max-width: 992px) {
   #mainNav.navbar-not-home .navbar-center {
-    margin-right: 40px;
+    margin-right: 100px;
   }
   #mainNav.navbar-not-home .navbar-nav > li > a {
     padding-left: 10px;
@@ -42,15 +42,9 @@
   }
 }
 @media (max-width: 870px) {
-  #mainNav.navbar-home .navbar-nav > li > a {
-    padding: 26px 20px;
-  }
-  #mainNav.navbar-not-home .navbar-center {
-    margin-right: 0;
-  }
   #mainNav.navbar-not-home .navbar-nav > li > a {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
   #video .left .white-arrow {
     left: 10px;
@@ -92,25 +86,25 @@
   }
   #mainNav.navbar-home .navbar-center,
   #mainNav.navbar-not-home .navbar-center,
-  #mainNav.navbar-home .navbar-right,
-  #mainNav.navbar-not-home .navbar-right {
+  #mainNav.navbar-home .navbar-number,
+  #mainNav.navbar-not-home .navbar-number {
     float: none;
     position: relative;
     left: 0;
     transform: none;
     min-width: 100%;
   }
-  #mainNav.navbar-home .navbar-right,
-  #mainNav.navbar-not-home .navbar-right {
+  #mainNav.navbar-home .navbar-number,
+  #mainNav.navbar-not-home .navbar-number {
     padding: 0;
   }
-  #mainNav.navbar-home .navbar-right > li,
-  #mainNav.navbar-not-home .navbar-right > li {
+  #mainNav.navbar-home .navbar-number > li,
+  #mainNav.navbar-not-home .navbar-number > li {
     padding: 15px;
     height: 51px;
   }
-  #mainNav.navbar-home .navbar-right > li,
-  #mainNav.navbar-not-home .navbar-right > li,
+  #mainNav.navbar-home .navbar-number > li,
+  #mainNav.navbar-not-home .navbar-number > li,
   #mainNav.navbar-home .navbar-center > li,
   #mainNav.navbar-not-home .navbar-center > li {
     border-top: 1px solid #fff;

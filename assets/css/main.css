@@ -96,36 +96,34 @@ a .link-arrow {
   height: auto;
 }
 #mainNav.navbar-home .navbar-center {
-  float: left;
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-  min-width: 614px;
-}
-#mainNav.navbar-home .navbar-right {
-  padding-right: 0;
+  float: none;
+  max-width: 884px;
+  margin: 0 auto;
+  padding-left: 115px;
+  padding-right: 115px;
+  justify-content: space-between;
+  width: 100%;
 }
 #mainNav.navbar-home .navbar-center > li > a {
-  padding: 26px 25px;
+  padding: 26px 10px;
 }
-#mainNav.navbar-home .navbar-right > li {
-  padding: 23px 17px;
+#mainNav.navbar-home .navbar-number > li {
+  padding: 23px 0;
 }
 #mainNav.navbar-not-home .navbar-brand {
   padding: 40px 15px 0;
 }
 #mainNav.navbar-not-home .navbar-center {
   float: right;
-  margin-right: 70px;
+  max-width: 534px;
+  width: auto;
+  margin-right: 170px;
 }
 #mainNav.navbar-not-home .navbar-center > li > a {
   padding: 52px 17px 26px;
 }
-#mainNav.navbar-not-home .navbar-right > li {
+#mainNav.navbar-not-home .navbar-number > li {
   padding: 50px 0 0;
-}
-#mainNav.navbar-not-home .navbar-right {
-  padding-right: 15px;
 }
 #mainNav.navbar-fixed-top {
   background: #0f0e0e;
@@ -135,7 +133,7 @@ a .link-arrow {
   padding-top: 26px;
   padding-bottom: 26px;
 }
-#mainNav.navbar-fixed-top .navbar-right > li {
+#mainNav.navbar-fixed-top .navbar-number > li {
   padding-top: 23px;
   padding-bottom: 23px;
 }
@@ -146,9 +144,15 @@ a .link-arrow {
   bottom: 3px;
   left: 0;
 }
+#mainNav #navbar-collapse-1 {
+  position: relative;
+}
 #mainNav .navbar-header,
 #mainNav .navbar-brand {
   height: 100%;
+}
+#mainNav .navbar-center {
+  display: flex;
 }
 #mainNav .navbar-center > li > a {
   font-family: 'PFDinTextCompPro-Medium', sans-serif;
@@ -156,7 +160,13 @@ a .link-arrow {
   color: #fff;
   font-size: 18px;
 }
-#mainNav .navbar-right > li {
+#mainNav .navbar-number {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 0;
+}
+#mainNav .navbar-number > li {
   font-family: 'PFDinTextCompPro-Medium', sans-serif;
   text-transform: uppercase;
   color: #fff;
@@ -165,6 +175,10 @@ a .link-arrow {
 }
 #mainNav .navbar-toggle .icon-bar {
   background-color: #fff;
+}
+#mainNav .navbar-nav > li {
+  float: none;
+  display: inline-block;
 }
 #mainNav .nav > li > a {
   position: relative;
