@@ -148,6 +148,9 @@ a .link-arrow {
             left: 0;
         }
     }
+    .container {
+        max-width: 1280px;
+    }
     #navbar-collapse-1 {
         position: relative;
     }
@@ -295,6 +298,7 @@ a .link-arrow {
         background-position: -385px -5px;
     }
 }
+
 header {
     font-family: @medium-font, sans-serif;
     color: #fff;
@@ -379,7 +383,6 @@ header {
 #portfolio {
     height: auto;
     .image-col {
-        height: auto;
         padding: 0;
         img {
             width: 100%;
@@ -418,6 +421,21 @@ header {
         letter-spacing: 0.1em;
         margin: 21px 0 27px;
     }
+}
+
+.text-col {
+    height: auto;
+    .container {
+        max-width: 600px;
+        width: 100%;
+        padding: 0;
+    }
+}
+.left-col .container {
+    float: right;
+}
+.right-col .container {
+    float: left;
 }
 
 #gallery {
@@ -522,7 +540,6 @@ header {
     .text-col {
         padding: 20px 40px;
         min-height: 480px;
-        height: auto;
     }
     .address {
         padding: 27px 0;

@@ -144,6 +144,9 @@ a .link-arrow {
   bottom: 3px;
   left: 0;
 }
+#mainNav .container {
+  max-width: 1280px;
+}
 #mainNav #navbar-collapse-1 {
   position: relative;
 }
@@ -403,7 +406,6 @@ header .white-arrow {
   height: auto;
 }
 #portfolio .image-col {
-  height: auto;
   padding: 0;
 }
 #portfolio .image-col img {
@@ -459,6 +461,20 @@ header .white-arrow {
   #portfolio p {
     font-size: 18px;
   }
+}
+.text-col {
+  height: auto;
+}
+.text-col .container {
+  max-width: 600px;
+  width: 100%;
+  padding: 0;
+}
+.left-col .container {
+  float: right;
+}
+.right-col .container {
+  float: left;
 }
 #gallery .carousel-inner > .item > a > img,
 #gallery .carousel-inner > .item > img {
@@ -573,7 +589,6 @@ header .white-arrow {
 #contacts .text-col {
   padding: 20px 40px;
   min-height: 480px;
-  height: auto;
 }
 #contacts .address {
   padding: 27px 0;
