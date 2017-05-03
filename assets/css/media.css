@@ -78,6 +78,7 @@
   }
   #mainNav .navbar-nav > li {
     text-align: center;
+    display: block;
   }
   #mainNav .navbar-nav > li > a {
     padding: 15px !important;
@@ -104,6 +105,8 @@
     left: 0;
     transform: none;
     min-width: 100%;
+    display: block;
+    padding: 0;
   }
   #mainNav.navbar-home .navbar-number,
   #mainNav.navbar-not-home .navbar-number {
@@ -155,6 +158,9 @@
   #contacts .feedback-col {
     height: auto !important;
     width: 100%;
+  }
+  .text-col .container {
+    max-width: 100%;
   }
   #contacts .text-col {
     padding: 20px;

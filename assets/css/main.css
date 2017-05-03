@@ -378,6 +378,9 @@ header .white-arrow {
 .page-content a:hover {
   text-decoration: underline;
 }
+#company {
+  padding-bottom: 20px;
+}
 #company .row {
   max-width: 900px;
   width: 100%;
@@ -411,9 +414,6 @@ header .white-arrow {
 #portfolio .image-col img {
   width: 100%;
   object-fit: cover;
-}
-#portfolio .text-col {
-  padding: 20px 75px;
 }
 #portfolio .text-col .arrow {
   position: absolute;
@@ -464,6 +464,7 @@ header .white-arrow {
 }
 .text-col {
   height: auto;
+  padding: 20px 40px;
 }
 .text-col .container {
   max-width: 600px;
@@ -587,7 +588,6 @@ header .white-arrow {
   color: #fff;
 }
 #contacts .text-col {
-  padding: 20px 40px;
   min-height: 480px;
 }
 #contacts .address {
